@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+   <arg name="front_end_rate" default="50"/>
+   <node name="ekf_slam_back_end" pkg="ekf_slam_back_end" type="ekf_slam_back_end" output="screen"/>
+   <node name="front_end" pkg="front_end" type="front_end_node.py" output="screen">
+	   <param name="dataRate" value="$(arg front_end_rate)"/>
+   </node>
+   <node name="ekf_slam_viz" pkg="ekf_slam_viz" type="ekf_slam_viz.py" output="screen"/>
+
+</launch>
+
