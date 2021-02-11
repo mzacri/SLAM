@@ -1,0 +1,2 @@
+# SLAM: ROS environement packages
+During my intern, the goal was to prepare an environement for the back-end of the SLAM algorithm. The back-end tries to estimate the localization and mapping of the robot based on a fusion of sensors data. The front end goal is to provide this data and make sure it is well synchronised. For validation and testing purposes, a complete suit is devolopped to visualize the results of the SLAM algorithm and compare them to an odometry based localisation and mapping. Images for the results are coming soon.  
